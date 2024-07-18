@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+
+    <Button
+        android:id="@+id/createAlbum"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/albums"
+        android:text="create Album" />
+
+    <ListView
+        android:id="@+id/albums"
+        android:layout_width="wrap_content"
+        android:layout_height="189dp" />
+
+    <Button
+        android:id="@+id/renameAlbum"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/albums"
+        android:layout_toRightOf="@id/createAlbum"
+        android:text="Rename Album" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/createAlbum"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name of Album:" />
+
+        <EditText
+            android:id="@+id/albumName"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:hint="Enter Name:"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deleteAlbum"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/createAlbum"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="85dp"
+        android:layout_toRightOf="@id/createAlbum"
+        android:text="Delete Album" />
+
+    <Button
+        android:id="@+id/openAlbum"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/createAlbum"
+        android:layout_marginTop="85dp"
+        android:text="Open Album" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/openAlbum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Search" />
+
+</RelativeLayout>

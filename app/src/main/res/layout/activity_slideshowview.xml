@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_below="@id/image"
+        android:layout_above="@id/next"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/addTag"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_toRightOf="@id/next"
+        android:layout_above="@id/deleteTag"
+        android:layout_marginTop="10dp"
+        android:text="Previous" />
+
+    <Button
+        android:id="@+id/addTag"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_above="@id/x1"
+        android:layout_marginTop="10dp"
+        android:text="Add Tag" />
+
+    <Button
+        android:id="@+id/deleteTag"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_toRightOf="@id/next"
+        android:layout_above="@id/x1"
+        android:layout_marginTop="10dp"
+        android:text="Delete Tag" />
+
+    <LinearLayout
+        android:id="@+id/x1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Person/Location Tags Only" />
+
+        <EditText
+            android:id="@+id/tagArea"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:ems="10"
+            android:hint="Enter the tag in the form of Key=Value"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+</RelativeLayout>

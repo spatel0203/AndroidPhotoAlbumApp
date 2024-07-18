@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/insertPhoto"/>
+
+    <Button
+        android:id="@+id/insertPhoto"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_above="@id/openSlideshow"
+        android:text="Insert Photo" />
+
+    <Button
+        android:id="@+id/deletePhoto"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_above="@id/openSlideshow"
+        android:layout_toRightOf="@id/insertPhoto"
+        android:text="Delete Photo" />
+
+    <Button
+        android:id="@+id/openSlideshow"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_above="@id/x"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="30dp"
+        android:text="Display/Slideshow" />
+
+    <Button
+        android:id="@+id/movePhoto"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
+        android:layout_above="@id/x"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@id/openSlideshow"
+        android:text="Move Photo" />
+
+    <LinearLayout
+        android:id="@+id/x"
+        android:layout_width="374dp"
+        android:layout_height="88dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the Result Album" />
+
+        <EditText
+            android:id="@+id/resultAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:ems="10"
+            android:hint="Enter the Album"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+
+</RelativeLayout>
